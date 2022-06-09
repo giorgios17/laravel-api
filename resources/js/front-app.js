@@ -31,7 +31,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
-    render: h => h(App),
+    //render: h => h(App),
     mounted() {
         axios.get('http://127.0.0.1:8000/api').then(results => { console.log(results); }).catch(error => console.log(error));
     }

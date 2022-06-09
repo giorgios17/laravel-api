@@ -49910,6 +49910,7 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
 
 var app = new Vue({
   el: '#app',
+  //render: h => h(App),
   mounted: function mounted() {
     axios.get('http://127.0.0.1:8000/api').then(function (results) {
       console.log(results);
